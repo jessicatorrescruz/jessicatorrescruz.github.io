@@ -1,0 +1,514 @@
+<!-- 
+Facultad de arquitectura
+colegio de diseño grafico
+Interfaz grafico de usuario
+Torres Cruz Jessica
+202059402 -->
+<html>
+    <header>
+   
+    <title>TABLAS EN HTML</title>
+        <style type="text/css">
+            *{padding: 0;
+            margin:0;
+           box-sizing: border-box
+            }
+            header, nav, main, footer{
+                
+                width:100%;
+                color: papayawhip;
+                padding: 30px;
+            }    
+            header{
+                
+                height: 100px;
+                background-color:sandybrown;
+            }
+            nav{
+            height:auto;
+            background-color:saddlebrown;
+            }
+            main{
+            height:auto;
+            background-color:sandybrown;
+            }
+            footer{
+                height: 60px;
+                background-color: saddlebrown;
+                }
+            section{
+                width: 70%;
+                height: auto;
+                background-color:bisque;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 30px;
+                color:brown;
+                padding: 30px;
+                overflow-x: auto;
+             }
+            h2{
+                margin: 20px;
+            }
+            header,footer{
+            text-align:center;
+            }
+            nav ul{
+            text-align: center;
+            }
+            nav ul li{
+            width: 10%;
+            background-color:sandybrown;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            list-style-type: :none;.
+            padding:10px;
+            display: inline-block;
+            }
+            nav ul li a{
+                text-decoration: none;
+            }
+            p{
+            margin-bottom: 30px;
+            }
+            table{background-color:sandybrown; }
+            
+            #tab_buap{
+                width: 80%;
+                margin-left:auto;
+                margin-right: auto;
+                border-spacing: 10px;
+                border-collapse: collapse;
+            }
+            #tab_buap th{
+            background-color: royalblue;
+            color:aliceblue;
+            height: 50px;
+            }
+            #tab_buap td{
+            background-color: aliceblue;
+            color:mediumblue;
+            height:30px;
+            padding: 10px;
+            }
+            #tab_buap th, #tab_buap td{
+            border-width: 3px;
+            border-color: lightsteelblue;
+            border-style:solid;
+            }
+            #tab_libros{
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+            }
+            #tan_libros th{
+            height: 50px;
+            background-color: sandybrown;
+            color:bisque;
+            }
+            #tab_libros tbody tr:nth-child(even){
+            background-color: sandybrown;
+            color:saddlebrown;
+            }
+            #tab_libros tbody tr:nth-child(odd){
+            background-color:bisque;
+            color:brown;
+            }
+            #tab_libros tfoot tr{
+            background-color: brown;
+            color:bisque;
+            }
+            #tab_libros td{
+            height: 30px;
+            padding: 20px;
+            }
+            #tab_pelis{
+                
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: burlywood;
+            /*
+                esta propiedad separa las celdas de la tabla
+                border-spacing: 10px; 
+            */    
+            border-collapse:collapse;
+            }
+            #tab_pelis th{
+            background-color: saddlebrown;
+            color:bisque;
+            height: 50px;    
+            padding: 10px;
+            }
+            #tab_pelis th,#tab_pelis td{
+            border-width: 3px;
+            border-style: solid;
+            border-color: rosybrown;
+            }
+            #tab_pelis td{
+            height: 30px;
+            padding: 20px;    
+            }
+            #tab_pelis tbody tr:hover{
+            background-color: yellow;
+            }
+             /*#tab_pelis tbody td:hover{
+            background-color: yellow;
+            }*/
+            #tab_series{
+            width: 1500px;
+            border-collapse: collapse;
+            background-color:burlywood;
+               
+            }
+            #tab_series th, #tab_series td{
+            border:3px solid brown;
+            padding: 10px;    
+                
+            }
+            #tab_series th{
+            background-color: darkgoldenrod;
+            color:saddlebrown;
+            }
+               div{
+            width: 15%;
+            display:inline-block;
+            margin-left: 30px;
+            margin-bottom: 15px;
+            margin-right:auto;       
+        }
+           
+        </style>
+    
+    </header>
+<body>
+    <header>
+        <div><a href="../index.html"><img style="width:32px" src="../images2/home.png"></a></div>
+        <h1>TABLAS EN HTML</h1>
+    </header>
+    <nav>
+        <ul>
+        <li><a href="Formatos%20texto.html">Formatos</a></li>
+        <li><a href="listas%20(2).html">Listas</a></li>
+        <li><a href="Enlaces2.html">Enlaces</a></li>
+        <li><a href="tablas.html">Tablas</a></li>
+        <li><a href="imagenes%20(1).html">Imagenes</a></li>    
+        <li><a href="audios.html">audio</a></li>  
+        <li><a href="videos.html">video</a></li>
+        <li><a href="formularios.html">formularios</a></li>    
+        
+        </ul>
+    </nav>
+    <main>
+        
+        <section>
+            <h2> Tabla simple</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam, sapien nec aliquam vulputate, ex odio scelerisque sem, eget laoreet erat ipsum vel diam. Curabitur pharetra pharetra nulla in egestas. Suspendisse tincidunt, nulla ut vulputate vehicula, leo tellus viverra justo, quis mollis lorem est a arcu. Maecenas non elit quis enim hendrerit mollis non vitae dui. Aliquam erat volutpat. Mauris eleifend nisi ut nisi consectetur tincidunt. Praesent porttitor at dui eu tempor. Etiam a aliquet lectus. In hac habitasse platea dictumst. Maecenas sit amet semper tellus. Ut at est eu orci cursus blandit. Nam at consectetur nibh. Quisque sit amet.</p>
+        <table id="tab_buap" border="1">     
+      
+            <thead>
+                <tr> 
+                <th> Nombre</th>
+                <th>Facultad</th>
+                <th> Facultad</th>
+                <th> Celular</th>
+                <th> Correo </th>
+                </tr>
+            </thead>    
+            <tbody>
+             <tr>
+                <td> 202059402</td>
+                <td>contaduria</td>
+                <td> derecho </td>
+                <td> 2050484056</td>
+                <td> mary.rojas@gmail.com </td>
+                </tr>
+            
+              <tr> 
+                <td> 202015620</td>
+                <td> cecilia gutierrez mendez </td>
+                <td> quimica</td>
+                <td> 2045962015</td>
+                <td> cecilia.22@gmail.com </td>
+                </tr>
+          <tr> 
+                <td> 204520186</td>
+                <td> pedro solis hernandez</td>
+                <td> Quimica</td>
+                <td> 2015487520</td>
+                <td> pedro.solis@gmail.com </td>
+                </tr>
+             <tr> 
+                <td> 20452206</td>
+                <td> Elisa Hernandez Benites</td>
+                <td> arquitectura</td>
+                <td> 205047630</td>
+                <td> Eli_44@gmail.com </td>
+                </tr>
+             <tr> 
+                <td> 202056489</td>
+                <td> kaida gonzales ramirez</td>
+                <td> Fisica</td>
+                <td> 2063524810</td>
+                <td> Kaida.tred@gmail.com </td>
+                </tr>
+             <tr> 
+                <td> 20547963</td>
+                <td> Eloy Rodriguez Perez</td>
+                <td> arquitectura</td>
+                <td> 9532015456</td>
+                <td> eloy.htR@gmail.com </td>
+                </tr>
+            </tbody>    
+            <tfoot>
+            </tfoot>
+            </table>
+        
+        </section>
+        
+        <section>
+        <h2>Tabla Cebra </h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sem enim, dapibus vitae accumsan et, finibus sit amet mauris. Suspendisse sem elit, euismod non justo a, finibus pretium nulla. Nulla nec consequat nisl, vitae dignissim purus. Nulla facilisis quis tortor sed mollis. Cras nec est sapien. Mauris lacinia euismod nisl. Sed volutpat vulputate suscipit. Proin egestas ultrices laoreet. Ut suscipit congue ex, ac ornare tortor semper at. Donec pulvinar euismod sem non convallis. Nunc risus diam, luctus a pharetra sed, consectetur sit amet velit. Ut sit amet augue lobortis, porttitor libero convallis, gravida urna.
+
+Mauris velit dolor, imperdiet ut arcu vel, dapibus maximus ligula. Donec accumsan magna vitae leo elementum venenatis. Nullam non mauris pharetra, ornare elit eget, vehicula ante. Aliquam erat volutpat. Nullam accumsan tempus felis, in elementum diam condimentum a. Duis pulvinar justo est, ut gravida risus feugiat ut. Sed tincidunt, eros non eleifend ultricies, lorem elit varius. </p>
+            
+            
+        <table id="tab_libros" border="1">
+            <thead>
+                <tr> 
+                <th> Titulo</th>
+                <th> Autor</th>
+                <th> Año</th>
+                <th> Editorial</th>
+                <th> Precio</th>    
+                </tr>
+            </thead>    
+            <tbody>
+             <tr>
+                <td> El poder de las palabras</td>
+                <td> Mariano sigman</td>
+                <td> 2022 </td>
+                <td> Penguin Random House</td>
+                <td> 330</td>
+                </tr>
+            
+              <tr> 
+                <td> Un mundo feliz </td>
+                <td> Aldous Huslex</td>
+                <td> 1932</td>
+                <td> Porrúa Mexico</td>
+                <td> 150 </td>
+                </tr>
+          <tr> 
+                <td> Los miserables</td>
+                <td> Victor Hugo</td>
+                <td> 1862</td>
+                <td> Planeta de libros</td>
+                <td> 250</td>
+                </tr>
+             <tr> 
+                <td> Alicia en el pais de la maravillas</td>
+                <td> Lewis Carroll</td>
+                <td> 1865</td>
+                <td> Trillas</td>
+                <td> 250 </td>
+                </tr>
+             <tr> 
+                <td> El jardin de las mariposas </td>
+                <td> Dot Hutchison</td>
+                <td> 2019</td>
+                <td> Planeta de libros</td>
+                <td> 293 </td>
+                </tr>
+             <tr> 
+                <td> Crónica de una muerte anunciada</td>
+                <td> Gabriel Garcia Marquez </td>
+                <td> 1981 </td>
+                <td> Diana</td>
+                <td> 238</td>
+                </tr>
+            </tbody>    
+            <tfoot>
+            <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Total</td>
+            <td>1,511</td>
+            
+                </tr>    
+        
+            </tfoot>
+            </table>
+        
+        </section>
+       
+        
+        <section>
+        <h2> Tabla cober</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt pellentesque massa, semper dignissim dui suscipit in. Aliquam id interdum ante. Curabitur in cursus ex. Aliquam aliquet feugiat ante non vestibulum. Quisque turpis dui, finibus sed purus ac, lacinia maximus ligula. Cras nec metus dignissim, vehicula felis quis, suscipit justo. Fusce at venenatis eros, sed vulputate elit.
+
+Vestibulum sed porta nunc. Nam luctus aliquam diam eget lacinia. Duis dolor lorem, sagittis nec luctus id, efficitur varius nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus eros eu felis dictum, ut lacinia magna ullamcorper. Cras sit amet eros gravida, eleifend eros id, gravida arcu. Nulla molestie fermentum arcu. Vivamus accumsan, est id blandit ultrices, sapien tellus aliquam magna, ac viverra est enim sed eros. Mauris imperdiet diam vitae risus tincidunt vehicula. Donec id ipsum.</p>
+        <table id="tab_pelis">
+            <thead>
+                <tr> 
+                <th> Titulo</th>
+                <th> director</th>
+                <th> Año</th>
+                <th> Genero</th>
+                <th> pais </th>    
+                </tr>
+            </thead>    
+            <tbody>
+             <tr>
+                <td> La cenicienta</td>
+                <td> kenneth brangh </td>
+                <td> 2015  </td>
+                <td> infantil/fantasia</td>
+                <td> Estados unidos </td>
+                </tr>
+            
+              <tr> 
+                <td> La sustancia</td>
+                <td> coralie fargeat  </td>
+                <td>2024 </td>
+                <td> Terror/ciencia ficcion</td>
+                <td> Estados unidos </td>
+                </tr>
+          <tr> 
+                <td> Babygirl </td>
+                <td> Halina reijn </td>
+                <td>2024 </td>
+                <td> suspenso/Erotica </td>
+                <td> Estados unidos </td>
+                </tr>
+             <tr> 
+                <td> Advertencia</td>
+                <td> Damian Mc Carthy</td>
+                <td> 2020</td>
+                <td>Terror/Misterio</td>
+                <td> irlandesa</td>
+                </tr>
+             <tr> 
+                <td> La bruja </td>
+                <td> Robert Eggers</td>
+                <td>2015</td>
+                <td>Terror/Misterio </td>
+                <td> Estados Unidos </td>
+                </tr>
+             <tr> 
+                <td> Desde mi cielo </td>
+                <td>Peter Jackson </td>
+                <td>2009</td>
+                <td> Fantasia/suspenso </td>
+                <td> Estados unidos </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                 <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Conteo de peliculas</td>
+            <td>6</td>
+            
+                </tr>    
+        
+            </tfoot>
+            </table>    
+        </section>
+        <section>
+        <h2> Tabla overflow-x</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat magna id hendrerit rhoncus. Aliquam quis laoreet lorem. Suspendisse hendrerit eleifend nunc, non sollicitudin ligula pellentesque in. Donec condimentum pellentesque luctus. In non malesuada eros. Aliquam non tortor congue, faucibus dolor ut, imperdiet nulla. Vestibulum a laoreet turpis.
+
+Suspendisse faucibus nulla et lorem vulputate, consequat finibus justo condimentum. Nullam auctor, massa sed suscipit rutrum, urna risus sagittis dolor, et iaculis ligula dolor ac neque. Praesent vehicula vel arcu ut venenatis. Cras fermentum gravida velit ut euismod. Sed metus erat, aliquet at iaculis id, efficitur quis felis. In tristique, mi quis.</p>    
+        <table id="tab_series">
+            <thead>
+            <tr>
+                <th>Serie</th>
+                <th>año</th>
+                <th>Genero</th>
+                <th colspan="2">Creador</th>
+                <th colspan="2">Pais</th>
+                <th>temporadas</th>
+                
+                </tr>
+                 </thead>    
+            <tbody>
+             <tr>
+                <td>House of the Dragon </td>
+                <td> 2022</td>
+                <td> Drama </td>
+                <td> Ryan Condal </td>
+                <td></td> 
+                <td>Estados Unidos  </td>
+                <td></td> 
+                <td> 2</td>
+                </tr>
+            
+              <tr> 
+                <td> Hora de aventura  </td>
+                <td>2018 </td>
+                <td>Fantasia </td>
+                <td> pendleton  </td>
+                <td></td>  
+                <td> estados unidos </td>
+                <td>suecia</td>  
+                <td> 10</td> 
+                 
+                </tr>
+          <tr> 
+                <td> Doctor house</td>
+                <td> 2004</td>
+                <td> drama medico</td>
+                <td> David Shore</td>
+                <td></td>
+                <td> Estados unidos</td>
+                <td></td>
+                <td>8</td>
+                </tr>
+             <tr> 
+                <td> Belleza verdadera</td>
+                <td> 2020</td>
+                <td> Romance</td>
+                <td> kim sang-hyup</td>
+                <td></td>
+                <td> corea del sur</td>
+                <td> </td> 
+                <td> 1</td> 
+                </tr>
+             <tr> 
+                <td> Shogun </td>
+                <td>2024 </td>
+                <td>Drama historico </td>
+                <td> justin </td>
+                <td></td> 
+                <td> japon </td>
+                <td></td> 
+                <td>1 </td> 
+                </tr>
+             <tr> 
+                <td>Club de cuervos </td>
+                <td> 2015 </td>
+                <td> comedia dramatica  </td>
+                <td>Michael lam </td>
+                <td></td> 
+                <td> Mexico </td>
+                <td></td> 
+                <td> 4 </td> 
+                </tr>
+            </tbody>
+            <tbody></tbody>
+            </table>
+        </section>
+        
+    </main>
+    
+   
+    <footer>
+    <h6> Elaborado por: Jessica Torres Cruz </h6>
+    </footer>
+ </body>
+</html>

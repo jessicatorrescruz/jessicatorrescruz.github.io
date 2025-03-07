@@ -1,0 +1,141 @@
+<!-- 
+Facultad de arquitectura
+colegio de diseño gràfico
+Interfaz gràfico de usuario
+Torres Cruz Jessica
+202059402 -->
+<html>
+<head>
+    <title>Formularios </title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    </head>
+    <body>
+        <header>
+        <div><a href="../index.html"><img style="width:32px" src="../images2/home.png"></a></div>
+    <h1>Formularios</h1></header>
+    <nav>
+        <ul>
+        <li><a href="Formatos%20texto.html">Formatos</a></li>
+        <li><a href="listas%20(2).html">Listas</a></li>
+        <li><a href="Enlaces2.html">Enalaces</a></li>
+        <li><a href="tablas.html">Tablas</a></li>
+        <li><a href="imagenes%20(1).html">imagenes</a></li>
+        <li><a href="audios.html">audios</a></li>
+        <li><a href="videos.html">videos</a></li>
+        <li><a href="formularios.html">Formularios</a></li>    
+        </ul>
+        </nav>
+        
+        <main>
+        <section>
+        <h2>Formulario nombre</h2> 
+          
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas amet optio natus nisi, provident, ipsam esse autem ducimus ullam, voluptatibus odio et! Dolore, nesciunt dolorum tempora earum adipisci aut optio sit nihil eligendi, impedit cumque. Delectus harum veritatis eveniet, quis aperiam. Laboriosam numquam eaque possimus eveniet similique nobis hic unde? Perferendis vitae pariatur excepturi eum optio aliquam mollitia aliquid ipsa ut natus accusantium, odit quas dolorem, modi sint quisquam, illum blanditiis asperiores a ullam veniam. Debitis quos dolores explicabo blanditiis ad alias, sunt ratione ea aspernatur incidunt qui, voluptatibus possimus quibusdam laborum iure harum sint molestias voluptatem id cumque? Velit.</p> 
+        
+        <form action="" method="get">
+        <label for="nombre">Nombre:</label> 
+        <input type="text" id="nombre" name="nombre" value="jessi">
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" name="contrasena" value="123456">
+        <input type="submit" value="Enviar"> 
+        </form>    
+            </section>
+            
+            <section>
+        <h2>Formulario color</h2>   
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt sint suscipit sapiente perferendis, praesentium minus fugit aliquam atque commodi saepe repellat error eius excepturi quis natus, fugiat placeat maiores. Rerum voluptatum officiis ipsa at ducimus nostrum harum dicta quibusdam quod iure molestias perferendis fugiat suscipit facilis, provident, odit inventore saepe praesentium dignissimos, quisquam porro assumenda quis officia. Repudiandae fugiat quaerat et officia maiores necessitatibus reiciendis illo consequuntur molestiae. Modi deleniti consequuntur impedit, aperiam fugit? Iusto fugiat possimus iure, aspernatur asperiores velit quisquam minus cum molestiae quibusdam sunt eos facilis. Ad officiis quo nihil nesciunt, cupiditate sunt reiciendis omnis repellendus. Neque!</p>
+        <p>the <strong> input type="color"</strong> is used for input fields that should contain a color</p>  
+        <form action="" method="get">
+         <label for="nombre">Nombre:</label> 
+        <input type="text" id="nombre" name="nombre" value="jessi">
+        <label for="favcolor">Selecciona tu color favorito:</label>    
+        <input type="color" id="favcolor" name="favcolor" value="#7D1C4A">
+         <label for="birthday">Introduce tu fecha de nacimiento</label>
+        <input type="date" id="birthday" name="birthday">
+        <label for="email">Escriba su email:</label>
+        <input type="email" id="email" name="gmail">
+         <label for="myfile">Seleccione un archivo:</label>  
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <label for="phone">Coloque su número de celular:</label><br><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[2-2-9-0]{3}-[0-9-4-8-8-4]{3}" required><br><br>
+        <small>formato: 22-78-07-81-79</small><br><br>
+        <input type="submit" value="Enviar">       
+        </form>   
+            
+            </section>
+            
+            
+         <section>
+        <h2>Fromulario</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas necessitatibus illum id odio commodi obcaecati reprehenderit ab, eveniet odit saepe voluptates voluptas, fuga cum nihil quod quis incidunt delectus asperiores! Cumque excepturi deserunt illum, ratione quam doloribus dolor id libero reiciendis maxime animi ab, odio quaerat repellendus. Id quidem cupiditate a quisquam deleniti corporis consequatur maiores laborum nemo? Illum id, deserunt totam aspernatur dicta perspiciatis delectus praesentium architecto ullam nam voluptas mollitia possimus dolorum magnam! Aspernatur necessitatibus consequuntur ut modi excepturi officiis voluptatibus maxime in iste. Dignissimos recusandae repudiandae, culpa quaerat nam modi! Saepe libero, eos sint assumenda quam similique.</p>    
+        <form action="" method="get">
+        <label for="name-1">Nombre</label>  
+        <input type="text" id="name-1" value="">
+        <label for="pais">País</label>  
+        <select id="pais" name="pais">
+            <option value="ar">Argentina</option>
+            <option value="co">Colombia</option>
+            <option value="us">Estados unidos</option>
+            <option value="mx">México</option>
+            <option value="it">Italia</option>
+            <option value="es">España</option>
+            
+        </select>
+        <label for="genero">genero</label>
+        <label for="fem">Femenino</label>
+        
+        <input type="radio" id="femenino" name="genero" value="fem">
+        <label for="mas">masculino</label>
+        <input type="radio"id="mas" name="genero" value="masculino">
+        
+        <label for="music">¿Cuál es tu género musical favorito?</label>
+        <input type="checkbox" id="music-1" name="music-1" value="pop">
+        <label for="pop" >Pop</label>
+        <input type="checkbox" id="music-2" name="music-2" value="rock">
+        <label for="music-2">rock</label>
+        <input type="checkbox" id="music-3" name="music-3" value="jazz-blues">
+        <label for="jazz-blues">jazz-blues</label>
+        <input type="submit" value="Enviar">
+        </form>
+        </section> 
+           
+        <section>
+        <h2>Formulario</h2> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, ad debitis? Eligendi repudiandae corrupti voluptatem dicta maiores, molestias eaque cumque laborum! Dolores amet fugiat praesentium quod dolore, vitae. Tempore officiis perspiciatis nam nulla rem voluptatem fuga sunt eum, neque, vel ipsam et, enim voluptate quam iste atque expedita dolor. Eos nisi, eligendi recusandae enim, corporis ipsum expedita voluptatum laudantium provident illum quidem iusto magnam labore quia voluptatem atque minima alias et placeat quasi. Quas delectus laudantium at debitis vitae quod reiciendis dicta deleniti, odio perferendis eaque aliquid mollitia ex tempore odit repudiandae voluptatum, iusto labore! Omnis, et velit in sed.</p>      
+        <form action="" method="get">
+        <label for="nombre">Nombre:</label> 
+        <input type="text" id="nombre" name="nombre" value="jessi">
+       <label for="fname">¿Que imagen se presenta?</label>
+       <input type="text" id="fname" name="fname">
+       <label for="1name">¿De que se compone la imagen?</label>
+       <input type="text" id="1name" name="1name">
+       <input type="image" src="../images/Cat-beso.gif" alt="submit" width="80" height="80" type="submit">
+        <label for="email">Escriba su email:</label>
+        <input type="email" id="email" name="gmail">
+        <input type="submit" value="Enviar">  
+        </form>    
+        </section>
+           
+        <section>
+        <h2>Formulario</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem aperiam in nam quasi maxime provident reiciendis ratione obcaecati nulla accusantium possimus quod, praesentium alias, modi dolorem, placeat eveniet, ab culpa? Nesciunt animi, nostrum nemo ipsam quidem ipsum ut libero mollitia consequatur iste non a reprehenderit quo quas unde iure neque obcaecati fugit doloribus! Mollitia, minima, alias sed eveniet atque eligendi iure. Iusto quam asperiores dolores rerum quibusdam suscipit quas, facilis, corrupti tempora sint ex eius quae ducimus consequatur tempore. Soluta, maxime neque nisi, suscipit ab error laborum. Voluptas cum beatae amet autem perspiciatis consequatur, consectetur, sunt culpa doloremque molestiae aspernatur!</p>       
+        <form action="" method="get">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="Nombre" name="nombre" value="Jessi">
+         <label for="music">¿Cuál es tu género musical favorito?</label>
+        <input type="checkbox" id="music-1" name="music-1" value="pop">
+        <label for="Rap" >Rap</label>
+        <input type="checkbox" id="music-2" name="music-2" value="Banda">
+        <label for="music-2">Banda</label>
+        <input type="checkbox" id="music-3" name="music-3" value="Pop-ingles">
+        <label for="Pop-ingles">Pop-Ingles</label>
+        <label for="vol">¿Cuánto le gusta el género de banda? ( 0 a 10):</label>  
+        <input type="range" id="vol" name="vol" min="0" max="10">
+        <input type="submit"value="submit"> 
+        </form>    
+        </section>             
+            
+        </main>
+        <footer> <h6>Elaborado por: Jessica Torres Cruz </h6></footer>
+    </body>
+</html><
